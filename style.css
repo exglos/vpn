@@ -1,0 +1,95 @@
+/* #EE0055 */
+
+@font-face {
+    font-family: main;
+    src: url(https://exglos.com/font.ttf);
+}
+html, body {
+    margin: 0px;
+    padding: 0px;
+}
+div {
+    font-family: main, monospace;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+a {
+    color: black;
+    outline: 0;
+}
+
+#top {
+    background: #EE0055;
+}
+#topLogo {
+    position: absolute;
+    margin: 8px;
+    width: 120px;
+    height: 120px;
+    background: url(https://exglos.com/logo.svg) center/contain no-repeat;
+    animation: in 10s forwards;
+}
+#top h1 {
+    margin: 44px 4px 48px 136px;
+    min-height: 80px;
+    font-size: 32px;
+    font-weight: normal;
+}
+#top a {
+    text-decoration: none;
+}
+#top a:focus {
+    text-decoration: underline;
+}
+#top h2 {
+    margin: 32px 4px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+}
+#main {
+    margin: 48px auto;
+    width: 90%;
+    max-width: 800px;
+}
+#main a:focus {
+    color: #EE0055;
+}
+#credentials {
+    display: block;
+    margin: 32px auto 80px;
+    width: 140px;
+    padding: 10px 4px;
+    text-align: center;
+    text-decoration: none;
+    line-height: 24px;
+    background: black;
+    color: white;
+    font-size: 18px;
+    outline: 0;
+}
+
+@media (hover: hover) {
+    #top a:hover {
+        text-decoration: underline;
+    }
+    #main a:hover {
+        color: #EE0055;
+    }
+}
+
+@media (min-width: 600px) {
+    #topLogo {
+        margin: 32px;
+    }
+    #top h1 {
+        margin: 64px 4px 48px 180px;
+        font-size: 40px;
+    }
+}
+
+@keyframes in {
+    0% {opacity: 1}
+    5% {opacity: 0.06}
+    100% {opacity: 1}
+}
